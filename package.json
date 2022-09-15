@@ -1,0 +1,28 @@
+{
+  "name": "satisfacao_box",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "start": "next start",
+    "build": "next build"
+  },
+  "keywords": [],
+  "author": "GABRIEL LOPES SIQUEIRA",
+  "license": "SIQUEIRA",
+  "dependencies": {
+    "google-spreadsheet": "^3.3.0",
+    "moment": "^2.29.4",
+    "next": "^12.2.5",
+    "postcss-import": "^15.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "swr": "^1.3.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.8",
+    "postcss": "^8.4.16",
+    "tailwindcss": "^3.1.8"
+  }
+}

@@ -1,0 +1,7 @@
+.wrapper {
+  @apply bg-stone-900 p-4 drop-shadow-md z-20;
+}
+
+.wrapper2 {
+  @apply bg-stone-900 p-1 shadow-md z-50 text-center;
+}
