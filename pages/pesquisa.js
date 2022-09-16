@@ -62,18 +62,22 @@ const Pesquisa = () => {
             return (
               <label className="block w-1/6 text-gray-900 text-center">
                 {nota} <br />
-                <input type='radio' name='Nota' value={nota} onChange={onChange} />
+                <input type='radio' name='Nota' value={nota} onChange={onChange} required />
               </label>
             )
           })
           }
+        </div>
+        <div>
+
         </div>
         <div className="text-center font-bold text-white my-12">
           <button className="bg-stone-900 px-4 py-2 rounded-lg hover:shadow shadow-lg" onClick={save}>Salvar</button>      </div>
 
       </div>}
 
-      {sucess && <div className="w-1/2 mx-auto ">
+
+      {sucess && <div className="w-3/4 mx-auto ">
         <p className="mb-6 text-center bg-blue-100 border-t border-b border-blue-500 text-blue-700 px-4 py-3">Obrigado por contribuir com a sua sugestão e/ou crítica</p>
         {
           retorno.showCoupon && <div className="text-center border p-4 mb-4">
