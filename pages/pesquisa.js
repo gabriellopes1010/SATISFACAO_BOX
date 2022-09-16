@@ -82,7 +82,7 @@ const Pesquisa = () => {
           </div>
         }
         {
-          retorno.showCoupon && <div className="text-center border p-4 mb-4">
+          retorno.showCoupon && <div className=" text-center border p-4 mb-4">
             <span className="font-bold block mb-2">{retorno.Promo}</span>
             <br />
             <span className="italic"> Tire um print ou foto dessa tela e aprensente ao garçon</span>
