@@ -41,15 +41,23 @@ const Pesquisa = () => {
         O restautante x sempre busca por melhor atender os seus cliente.<br />
         Por isso, estamos sempre abertos a ouvir a sua opinião
       </p>
-      {!sucess && <div className="w-1/2 mx-auto ">
-        <label className="font-bold">Seu nome:</label>
-        <input type='text' className="p-4 px- block shadow bg-slate-200 rounded-full my-2" placeholder="Nome" onChange={onChange} name='Nome' value={form.Nome} />
-        <label className="font-bold">E-mail:</label>
-        <input type='text' className="p-4 block shadow bg-slate-200 rounded-full my-2" placeholder="Email" onChange={onChange} name='Email' value={form.Email} />
-        <label className="font-bold">Whatsapp:</label>
-        <input type='text' className="p-4 block shadow bg-slate-200 rounded-full my-2" placeholder="Whatsapp" onChange={onChange} name='Whatsapp' value={form.Whatsapp} />
-        <label className="font-bold">Nota:</label>
-        <div className="flex py-6">
+      {!sucess && <div>
+        <div className="w-1/2 text-left mx-auto">
+          <label className="font-bold">Seu nome:</label>
+          <input type='text' className="p-4 px- block shadow bg-slate-200 rounded-full my-2" placeholder="Nome" onChange={onChange} name='Nome' value={form.Nome} />
+        </div>
+        <div className="w-1/2 text-left mx-auto">
+          <label className="font-bold">E-mail:</label>
+          <input type='text' className="p-4 block shadow bg-slate-200 rounded-full my-2" placeholder="Email" onChange={onChange} name='Email' value={form.Email} />
+        </div>
+        <div className="w-1/2 text-left mx-auto">
+          <label className="font-bold">Whatsapp:</label>
+          <input type='text' className="p-4 block shadow bg-slate-200 rounded-full my-2" placeholder="Whatsapp" onChange={onChange} name='Whatsapp' value={form.Whatsapp} />
+        </div>
+        <div className="w-1/2 text-left mx-auto">
+          <label className="font-bold">Nota:</label>
+        </div>
+        <div className="w-1/2 flex py-6 mx-auto">
           {notas.map(nota => {
             return (
               <label className="block w-1/6 text-gray-900 text-center">
@@ -65,7 +73,7 @@ const Pesquisa = () => {
 
       </div>}
 
-      {sucess && <div className="w-1/5 mx-auto ">
+      {sucess && <div className="w-1/2 mx-auto ">
         <p className="mb-6 text-center bg-blue-100 border-t border-b border-blue-500 text-blue-700 px-4 py-3">Obrigado por contribuir com a sua sugestão e/ou crítica</p>
         {
           retorno.showCoupon && <div className="text-center border p-4 mb-4">

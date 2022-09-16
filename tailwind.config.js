@@ -9,4 +9,10 @@ module.exports = {
     extend: {},
   },
   plugins: [],
+  variants: {
+    // ...
+
+    margin: ['responsive', 'hover', 'focus'],
+  }
 }
+
