@@ -43,11 +43,11 @@ const Pesquisa = () => {
       </p>
       {!sucess && <div className="w-1/5 mx-auto ">
         <label className="font-bold">Seu nome:</label>
-        <input type='text' className="p-4 block shadow bg-slate-200 rounded-full my-2" placeholder="Nome" onChange={onChange} name='Nome' value={form.Nome} />
+        <input type='text' className="mx-auto p-4 block shadow bg-slate-200 rounded-full my-2" placeholder="Nome" onChange={onChange} name='Nome' value={form.Nome} />
         <label className="font-bold">E-mail:</label>
-        <input type='text' className="p-4 block shadow bg-slate-200 rounded-full my-2" placeholder="Email" onChange={onChange} name='Email' value={form.Email} />
+        <input type='text' className="mx-auto p-4 block shadow bg-slate-200 rounded-full my-2" placeholder="Email" onChange={onChange} name='Email' value={form.Email} />
         <label className="font-bold">Whatsapp:</label>
-        <input type='text' className="p-4 block shadow bg-slate-200 rounded-full my-2" placeholder="Whatsapp" onChange={onChange} name='Whatsapp' value={form.Whatsapp} />
+        <input type='text' className="mx-auto p-4 block shadow bg-slate-200 rounded-full my-2" placeholder="Whatsapp" onChange={onChange} name='Whatsapp' value={form.Whatsapp} />
         <label className="font-bold">Nota:</label>
         <div className="flex py-6">
           {notas.map(nota => {
