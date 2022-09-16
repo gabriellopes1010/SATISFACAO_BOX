@@ -41,7 +41,7 @@ const Pesquisa = () => {
         O restautante x sempre busca por melhor atender os seus cliente.<br />
         Por isso, estamos sempre abertos a ouvir a sua opinião
       </p>
-      {!sucess && <div className="w-1/5 mx-auto ">
+      {!sucess && <div className="w-1/2 mx-auto px-4 ">
         <label className="font-bold">Seu nome:</label>
         <input type='text' className="mx-auto p-4 block shadow bg-slate-200 rounded-full my-2" placeholder="Nome" onChange={onChange} name='Nome' value={form.Nome} />
         <label className="font-bold">E-mail:</label>
