@@ -42,22 +42,22 @@ const Pesquisa = () => {
         Por isso, estamos sempre abertos a ouvir a sua opinião
       </p>
       {!sucess && <div>
-        <div className="w-1/2 text-left mx-auto">
+        <div className="w-52 sm:w-48 md:w-48 lg:w-48 xl:w-48 text-left mx-auto">
           <label className="font-bold">Seu nome:</label>
           <input type='text' className="p-4 px- block shadow bg-slate-200 rounded-full my-2" placeholder="Nome" onChange={onChange} name='Nome' value={form.Nome} />
         </div>
-        <div className="w-1/2 text-left mx-auto">
+        <div className="w-52 sm:w-48 md:w-48 lg:w-48 xl:w-48 text-left mx-auto">
           <label className="font-bold">E-mail:</label>
           <input type='text' className="p-4 block shadow bg-slate-200 rounded-full my-2" placeholder="Email" onChange={onChange} name='Email' value={form.Email} />
         </div>
-        <div className="w-1/2 text-left mx-auto">
+        <div className="w-52 sm:w-48 md:w-48 lg:w-48 xl:w-48 text-left mx-auto">
           <label className="font-bold">Whatsapp:</label>
           <input type='text' className="p-4 block shadow bg-slate-200 rounded-full my-2" placeholder="Whatsapp" onChange={onChange} name='Whatsapp' value={form.Whatsapp} />
         </div>
-        <div className="w-1/2 text-left mx-auto">
+        <div className="w-52 sm:w-48 md:w-48 lg:w-48 xl:w-48 text-left mx-auto">
           <label className="font-bold">Nota:</label>
         </div>
-        <div className="w-1/2 flex py-6 mx-auto">
+        <div className="w-52 sm:w-48 md:w-48 lg:w-48 xl:w-48 text-left mx-auto flex py-6 mx-auto">
           {notas.map(nota => {
             return (
               <label className="block w-1/6 text-gray-900 text-center">
